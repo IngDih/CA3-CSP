@@ -1,6 +1,7 @@
-.header {
-    background-color: rgb(102, 0, 0);
-    
+#header {
+    position: relative;
+    background-image: url(img\headerimg.png);
+    background-color: #cccccc;
     padding: 50px 0px 50px 0;
     border: #fff solid 1px;
 }
@@ -26,7 +27,7 @@
 }
 
 .button {
-    background-color: #f0e87a;
+    background-color: #ff9811;
     transition-duration: 0.4s;
     width: 150px;
     height: 50px;
