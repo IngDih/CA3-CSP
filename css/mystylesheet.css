@@ -1,15 +1,12 @@
 #header {
-    position: relative;
-    background-image: url(img\headerimg.png);
+    background-image: url(____);
     background-color: #cccccc;
-    padding: 50px 0px 50px 0;
+    padding: 80px 0px 80px 0;
     border: #fff solid 1px;
 }
 
 .whiteheader {
     height: 120px;
-    
-  
     background-color: #fff;
     text-align: center;
     padding: 20px 0 0 0;
