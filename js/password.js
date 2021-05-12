@@ -23,3 +23,7 @@ function tipUsername() {
     elMsg.className = 'tip';
     elMsg.innerHTML = 'Your password should contain at least 8 characters, including: *one lowercase letter; *One uppercase letter; *One digit; *One special character.';    
 }
+
+function validate(){
+    var password = document.getElementById('password').value;
+}

@@ -1,6 +1,6 @@
 #header {
-    background-image: url(____);
-    background-color: #cccccc;
+    background-image: url(/img/header1.png);
+    background-color: #ccc;
     padding: 80px 0px 80px 0;
     border: #fff solid 1px;
 }
@@ -14,22 +14,22 @@
 }
 
 .headertext1 {
-    font: 40px/150% pacifico;
+    font: 40px/150% skranji;
     letter-spacing: 3px;
 }
 
 .headertext2 {
-    font: 25px/150% amatic sc;
+    font: 25px/10% megrim;
     letter-spacing: 8px;
 }
 
 .button {
-    background-color: #ff9811;
+    background-color: #ffffff;
     transition-duration: 0.4s;
     width: 150px;
     height: 50px;
     border-radius: 5px;
-    border: #fff solid 1px;
+    border: rgb(0, 0, 0) solid 1px;
     text-align: center;
     font-size: 16px;    
 }
@@ -46,7 +46,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 
 .center {
