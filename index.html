@@ -28,17 +28,8 @@
                     CA3 Client-Side Programming</div>
             </div>
         </div>
-
-        <table class="center">
-            <tr>
-                <td>
-                    <button class="button"><a href="index.html"> HOME</a>
-
-                <td>
-                    <button class="button"><a href="page2.html">PAGE 2</a>
-                </td>
-            </tr>
-        </table>
+        <button class="button button"><a href="index.html">Page 1</a></button>
+        <button class="button button"><a href="page2.html">Page 2</a></button>
         <br><br>
 
         <div class="row">
@@ -61,12 +52,12 @@
                         required="required" /><br />
                     <input type="submit" value="submit" />
                 </form>
-
-                <button class="btn btn-info mr-4" id="getRandom">Get Random Users</button>
+------------------------------------------------------<br><br>
+                <button class="button button2" id="getRandom">Get Random Users</button>
 
                 <!-- Need to be checked and tested, small progress, need to review json-->
                 <script>
-                    
+
                     document.getElementById('getRandom').addEventListener('click', getRandom);
                     function getRandom() {
                         fetch('https://randomuser.me/api/?results=5')
@@ -89,6 +80,7 @@
                                 document.getElementById('output').innerHTML = output;
 
                             })
+                    }
                 </script>
 
 

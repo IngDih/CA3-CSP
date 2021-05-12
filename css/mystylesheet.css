@@ -24,16 +24,28 @@
 }
 
 .button {
-    background-color: #ffffff;
+    background-color: #ffd98d;
     transition-duration: 0.4s;
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     border-radius: 5px;
     border: rgb(0, 0, 0) solid 1px;
     text-align: center;
     font-size: 16px;    
+    cursor: pointer;
 }
 
+.button2{
+    background-color: #ffd98d;
+    transition-duration: 0.4s;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: rgb(0, 0, 0) solid 1px;
+    text-align: center;
+    font-size: 16px;    
+    cursor: pointer;
+}
 .button:hover {
     background-color: #ffffd2;
     color: black;
@@ -53,3 +65,17 @@ a:visited {
     margin-left: auto;
     margin-right: auto;
   }
+
+table, th, td {
+    border: none;
+}
+
+th, td {
+    padding: 0px;
+    height: 30px;
+    text-align: left;
+}
+
+table {
+    width: 400px;
+}

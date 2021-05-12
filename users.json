@@ -1,22 +1,282 @@
-
-/* examples */
-
-
-  [
+[
     {
-        "id": 1,
-        "name": "John",
-        "email": "jsnel@cct.ie"
-
+        "gender": "male",
+        "name": {
+            "title": "Monsieur",
+            "first": "Robert",
+            "last": "Vincent"
+        },
+        "location": {
+            "street": {
+                "number": 7380,
+                "name": "Avenue Tony-Garnier"
+            },
+            "city": "Rances",
+            "state": "Luzern",
+            "country": "Switzerland",
+            "postcode": 1264,
+            "coordinates": {
+                "latitude": "-55.9149",
+                "longitude": "-109.6114"
+            },
+            "timezone": {
+                "offset": "-3:30",
+                "description": "Newfoundland"
+            }
+        },
+        "email": "robert.vincent@example.com",
+        "login": {
+            "uuid": "df5b1a75-6f33-4980-895b-57e10f1879ca",
+            "username": "greenpeacock429",
+            "password": "michelle",
+            "salt": "z8nnKIbV",
+            "md5": "5af9171fe68b1657b6da7f7d0c698e1a",
+            "sha1": "bdd0a75a888a74583fe85aabe678321a22c1f67f",
+            "sha256": "77a727fbcdbc09f7ab95d6d47bced15a99754d04c2152808ce7deeb0b67291de"
+        },
+        "dob": {
+            "date": "1968-06-18T06:57:30.992Z",
+            "age": 53
+        },
+        "registered": {
+            "date": "2018-06-13T22:50:27.917Z",
+            "age": 3
+        },
+        "phone": "079 154 67 65",
+        "cell": "077 887 76 27",
+        "id": {
+            "name": "AVS",
+            "value": "756.1068.1561.25"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/12.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/12.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/12.jpg"
+        },
+        "nat": "CH"
     },
     {
-        "id": 2, 
-        "name": "Ken",
-        "email": "ken@cct.ie"
+        "gender": "female",
+        "name": {
+            "title": "Ms",
+            "first": "Silke",
+            "last": "Fuchs"
+        },
+        "location": {
+            "street": {
+                "number": 6108,
+                "name": "Bachstraße"
+            },
+            "city": "Dietenheim",
+            "state": "Baden-Württemberg",
+            "country": "Germany",
+            "postcode": 42652,
+            "coordinates": {
+                "latitude": "-42.6759",
+                "longitude": "4.4702"
+            },
+            "timezone": {
+                "offset": "-4:00",
+                "description": "Atlantic Time (Canada), Caracas, La Paz"
+            }
+        },
+        "email": "silke.fuchs@example.com",
+        "login": {
+            "uuid": "d3d49020-5464-4a1a-9961-c2e8fb83998c",
+            "username": "bigrabbit262",
+            "password": "giants",
+            "salt": "pApNhNfK",
+            "md5": "5def382cd353d6b607642d3d9c2f4d50",
+            "sha1": "f03b76734d41f3eb4ab1414c961f845a3305f5fd",
+            "sha256": "d385ed75a51f8605e91aa08fdc2489070d9d4f4d49f2e886e63132962523833e"
+        },
+        "dob": {
+            "date": "1995-04-16T12:19:44.896Z",
+            "age": 26
+        },
+        "registered": {
+            "date": "2011-04-05T17:39:42.848Z",
+            "age": 10
+        },
+        "phone": "0752-6557089",
+        "cell": "0176-4531557",
+        "id": {
+            "name": "",
+            "value": null
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/96.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/96.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/96.jpg"
+        },
+        "nat": "DE"
     },
     {
-        "id": 3,
-        "name": "Amilcar",
-        "email": "amilcar@cct.ie"
+        "gender": "female",
+        "name": {
+            "title": "Mrs",
+            "first": "Vicenta",
+            "last": "Gallego"
+        },
+        "location": {
+            "street": {
+                "number": 3094,
+                "name": "Calle de Tetuán"
+            },
+            "city": "Logroño",
+            "state": "Castilla la Mancha",
+            "country": "Spain",
+            "postcode": 50812,
+            "coordinates": {
+                "latitude": "-19.5649",
+                "longitude": "175.3567"
+            },
+            "timezone": {
+                "offset": "-3:30",
+                "description": "Newfoundland"
+            }
+        },
+        "email": "vicenta.gallego@example.com",
+        "login": {
+            "uuid": "f4644a74-723e-427e-85aa-5a4f6d87f29d",
+            "username": "purplefrog689",
+            "password": "peewee",
+            "salt": "jn3kB4bx",
+            "md5": "d973b8aace6847f271a30c0c5a50aa85",
+            "sha1": "7c27dea741ac2df44c5abe23e2e2d1f87506b9a0",
+            "sha256": "a65a7793b815768ef4db131c5c1e29ded66129cab6f0a386b3c14d10a0b6aac2"
+        },
+        "dob": {
+            "date": "1961-05-07T11:34:43.088Z",
+            "age": 60
+        },
+        "registered": {
+            "date": "2019-08-11T09:59:55.369Z",
+            "age": 2
+        },
+        "phone": "985-491-688",
+        "cell": "649-470-541",
+        "id": {
+            "name": "DNI",
+            "value": "66941015-U"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/39.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/39.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/39.jpg"
+        },
+        "nat": "ES"
+    },
+    {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Samuel",
+            "last": "Rintala"
+        },
+        "location": {
+            "street": {
+                "number": 3404,
+                "name": "Hermiankatu"
+            },
+            "city": "Luvia",
+            "state": "Southern Ostrobothnia",
+            "country": "Finland",
+            "postcode": 59880,
+            "coordinates": {
+                "latitude": "-6.2399",
+                "longitude": "-7.3101"
+            },
+            "timezone": {
+                "offset": "+10:00",
+                "description": "Eastern Australia, Guam, Vladivostok"
+            }
+        },
+        "email": "samuel.rintala@example.com",
+        "login": {
+            "uuid": "dcf537c8-dae8-4914-acdf-a73e7910f341",
+            "username": "ticklishzebra711",
+            "password": "road",
+            "salt": "2N3HLeq4",
+            "md5": "6d48ef43beb8ea5018ac662933e54bed",
+            "sha1": "8b27aaa810742e597f787df9d477044d414aa8e7",
+            "sha256": "e0c430138802550d8d5803499d4bd4727ab269cfa7ea1232cff36296fa14245b"
+        },
+        "dob": {
+            "date": "1969-08-18T07:08:28.027Z",
+            "age": 52
+        },
+        "registered": {
+            "date": "2005-08-14T02:29:12.576Z",
+            "age": 16
+        },
+        "phone": "05-510-923",
+        "cell": "040-230-78-01",
+        "id": {
+            "name": "HETU",
+            "value": "NaNNA529undefined"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/89.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/89.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/89.jpg"
+        },
+        "nat": "FI"
+    },
+    {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Elijah",
+            "last": "Li"
+        },
+        "location": {
+            "street": {
+                "number": 3896,
+                "name": "Halifax Street"
+            },
+            "city": "Blenheim",
+            "state": "Waikato",
+            "country": "New Zealand",
+            "postcode": 45850,
+            "coordinates": {
+                "latitude": "62.3223",
+                "longitude": "-171.2547"
+            },
+            "timezone": {
+                "offset": "+1:00",
+                "description": "Brussels, Copenhagen, Madrid, Paris"
+            }
+        },
+        "email": "elijah.li@example.com",
+        "login": {
+            "uuid": "577651d6-bbb7-4eb8-bb29-0510e309fa6c",
+            "username": "blackmeercat149",
+            "password": "plasma",
+            "salt": "TSUE6QHl",
+            "md5": "d39f35b9cbd426ef226fe16679977df4",
+            "sha1": "9de530aa23aa6eeac15c2172af1f0257b49e9d70",
+            "sha256": "b24e94034ff04e85bf6830c41704065ec5ea81ec3695a69edc0d28a52969651b"
+        },
+        "dob": {
+            "date": "1963-03-04T09:49:53.864Z",
+            "age": 58
+        },
+        "registered": {
+            "date": "2003-11-05T01:01:47.508Z",
+            "age": 18
+        },
+        "phone": "(810)-596-4744",
+        "cell": "(779)-319-3141",
+        "id": {
+            "name": "",
+            "value": null
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/3.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/3.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/3.jpg"
+        },
+        "nat": "NZ"
     }
 ]
