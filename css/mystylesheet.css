@@ -45,6 +45,7 @@
     text-align: center;
     font-size: 16px;    
     cursor: pointer;
+    
 }
 .button:hover {
     background-color: #ffffd2;
@@ -67,7 +68,7 @@ a:visited {
   }
 
 table, th, td {
-    border: none;
+    border: 1px solid rgb(51, 161, 189);
 }
 
 th, td {
@@ -79,3 +80,13 @@ th, td {
 table {
     width: 400px;
 }
+
+ul {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.col-sm-4{
+    background-color: rgba(72, 173, 171, 0.082);
+   }
