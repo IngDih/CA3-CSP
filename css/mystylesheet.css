@@ -1,7 +1,14 @@
 #header {
     background-image: url(/img/header1.png);
     background-color: #ccc;
-    padding: 80px 0px 80px 0;
+    padding: 90px 0px 90px 0;
+    border: #fff solid 1px;
+}
+
+#header2 {
+    background-image: url(/img/gifheader.gif);
+    background-color: #ccc;
+    padding: 90px 0px 90px 0;
     border: #fff solid 1px;
 }
 
@@ -14,7 +21,7 @@
 }
 
 .headertext1 {
-    font: 40px/150% skranji;
+    font: 44px/150% skranji;
     letter-spacing: 3px;
 }
 
