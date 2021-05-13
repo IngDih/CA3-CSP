@@ -15,8 +15,6 @@
     <script scr="/js/script.js"></script>
     <script scr="/js/password.js"></script>
     <script scr="/js/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 
 <body>
@@ -200,7 +198,24 @@
                     </tr>
                     
                 </table>
-                
+                <script>
+                    var total_items = 14;
+function CalculateItemsValue() {
+    let total = 0;
+
+    for (let i = 1; i < total_items; i++) {
+        itemID = document.getElementById("qnt_" + i);
+        console.log(itemID);
+        total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+    }
+
+    document.getElementById('ItemsTotal').innerHTML = "€" + total;
+}
+
+document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+    item.addEventListener('keyup', CalculateItemsValue);
+})
+                </script>
                 
 
                 <!-- Bill descriptor -->

@@ -6,6 +6,7 @@ function CalculateItemsValue() {
 
     for (let i = 1; i < total_items; i++) {
         itemID = document.getElementById("qnt_" + i);
+        console.log(itemID);
         total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
     }
 
