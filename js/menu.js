@@ -1,11 +1,12 @@
 /* Total price */
-var total_items = 15;
-function CalculateItemsValue() {
 
+function CalculateItemsValue() {
+    let total_items = 15;
     let total = 0;
 
     for (let i = 1; i <= total_items; i++) {
         itemID = document.getElementById("qnt_" + i);
+        console.log("qnt_" + i + " " + itemID.value);
         total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
     }
 
@@ -19,7 +20,6 @@ document.querySelectorAll('[id^="qnt_"]').forEach(item => {
 
 
 /* Starters */
-var total_items = 3;
 function CalculateStartersValue() {
     let total = 0;
 
@@ -38,9 +38,7 @@ document.querySelectorAll('[id^="qnt_1"], [id^="qnt_2"], [id^="qnt_3"]').forEach
 
 
 /* Mains */
-var total_items = 4;
 function CalculateMainsValue() {
-
     let total = 0;
 
     for (let i = 4; i <= 7; i++) {
@@ -58,7 +56,6 @@ document.querySelectorAll('[id^="qnt_4"], [id^="qnt_5"], [id^="qnt_6"], [id^="qn
 
 
 /* Desserts */
-var total_items = 3;
 function CalculateDessertsValue() {
 
     let total = 0;
@@ -78,7 +75,6 @@ document.querySelectorAll('[id^="qnt_8"], [id^="qnt_9"], [id^="qnt_10"]').forEac
 
 
 /* Drinks */
-var total_items = 5;
 function CalculateDrinksValue() {
 
     let total = 0;
