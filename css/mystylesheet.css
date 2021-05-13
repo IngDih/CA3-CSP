@@ -95,6 +95,17 @@ table {
     width: 90%;
 }
 
+.postit {
+    background-image: url(http://st2.depositphotos.com/4196725/6839/i/450/depositphotos_68398807-white-wrinkled-paper-texture.jpg);
+    width:fit-content;
+    }
+
+.table2 {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .price {
     text-align: center;
 }
@@ -118,10 +129,10 @@ ul {
     overflow-y: auto;
 }
 
-.col-sm-4 {
-    background-color: rgba(72, 173, 171, 0.082);
+.col-sm-3 {
+    background-color: white;
 }
 
 .col {
-    padding-top: 0px;
+    padding-top: px;
 }

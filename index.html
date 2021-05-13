@@ -12,12 +12,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- My CSS and JS -->
     <link rel="stylesheet" href="css\mystylesheet.css">
-    <script scr="/js/script.js"></script>
-    <script scr="/js/password.js"></script>
-    <script scr="/js/menu.js"></script>
+    <script src="js/password.js"></script>
+    
 </head>
 
 <body>
+    
     <div class="container">
 
         <div id="header">
@@ -97,8 +97,8 @@
                         <td class="price">€11.5</td>
                     </tr>
                     <tr>
-                        <td class="pad"><b>Salmon Hosomaki x2 </b><br>
-                            shiqsui</td>
+                        <td class="pad"><b>Salmon Hosomaki</b><br>
+                            def</td>
                         <td class="cell">
                             <input name="qnt_6" type="text" id="qnt_6" class="mains" value="0" size="1" data-price="1.95" />
                         </td>
@@ -198,28 +198,52 @@
                     </tr>
                     
                 </table>
-                <script>
-                    var total_items = 14;
-function CalculateItemsValue() {
-    let total = 0;
-
-    for (let i = 1; i < total_items; i++) {
-        itemID = document.getElementById("qnt_" + i);
-        console.log(itemID);
-        total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
-    }
-
-    document.getElementById('ItemsTotal').innerHTML = "€" + total;
-}
-
-document.querySelectorAll('[id^="qnt_"]').forEach(item => {
-    item.addEventListener('keyup', CalculateItemsValue);
-})
-                </script>
-                
+               
+                  <!--<script>var total_items = 16;
+                    function CalculateItemsValue() {
+                        let total = 0;
+                    
+                        for (let i = 1; i < total_items; i++) {
+                            itemID = document.getElementById("qnt_" + i);
+                            total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+                        }
+                    
+                        document.getElementById('ItemsTotal').innerHTML = "€" + total.toFixed(2);
+                    }
+                    
+                    document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+                        item.addEventListener('keyup', CalculateItemsValue);
+                    })</script>-->
 
                 <!-- Bill descriptor -->
-                <table></table>
+                <!-- Detailed BILL -->
+                <div class="postit">
+                    <table class="table2">
+                        <tr>
+                            <th colspan="3">Bill Detailed</th>
+                        </tr>
+                        <tr>
+                            <td class="total"><strong>
+                                    <div id="StartersTotal">€0</div>
+                                </strong></td>
+                        
+                        <tr>
+                            <td class="total"><strong>
+                                    <div id="MainsTotal">€0</div>
+                                </strong></td>
+                        
+                        <tr>
+                            <td class="total"><strong>
+                                    <div id="DessertsTotal">€0</div>
+                                </strong></td>
+                        
+                        <tr>
+                            <td class="total"><strong>
+                                    <div id="DrinksTotal">€0</div>
+                                </strong></td></tr>
+                        
+                    </table>
+                </div>
             </div>
 
             
@@ -281,6 +305,7 @@ document.querySelectorAll('[id^="qnt_"]').forEach(item => {
     <link
         href="https://fonts.googleapis.com/css?family=Skranji:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="js/menu.js"></script>
 </body>
 
 </html>
