@@ -1,7 +1,7 @@
 #header {
     background-image: url(/img/header1.png);
     background-color: #ccc;
-    padding: 90px 0px 90px 0;
+    padding: 90px 0px 50px 0px;
     border: #fff solid 1px;
 }
 
@@ -38,11 +38,11 @@
     border-radius: 5px;
     border: rgb(0, 0, 0) solid 1px;
     text-align: center;
-    font-size: 16px;    
+    font-size: 16px;
     cursor: pointer;
 }
 
-.button2{
+.button2 {
     background-color: #ffd98d;
     transition-duration: 0.4s;
     width: 150px;
@@ -50,10 +50,10 @@
     border-radius: 5px;
     border: rgb(0, 0, 0) solid 1px;
     text-align: center;
-    font-size: 16px;    
+    font-size: 16px;
     cursor: pointer;
-    
 }
+
 .button:hover {
     background-color: #ffffd2;
     color: black;
@@ -72,7 +72,7 @@ a:visited {
 .center {
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 table, th, td {
     border: 1px solid rgb(51, 161, 189);
@@ -89,11 +89,17 @@ table {
 }
 
 ul {
-    display: block;
     text-align: center;
-    margin: 0 auto;
-  }
+    padding: 0px 0px 0px 0px;
+    margin: 0em;
+}
 
-.col-sm-4{
+#output {
+    height: 100%;
+    margin: 0em;
+    overflow-y: auto;
+}
+
+.col-sm-3 {
     background-color: rgba(72, 173, 171, 0.082);
-   }
+}
