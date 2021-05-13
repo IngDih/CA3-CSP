@@ -199,45 +199,35 @@
                     
                 </table>
                
-                  <!--<script>var total_items = 16;
-                    function CalculateItemsValue() {
-                        let total = 0;
-                    
-                        for (let i = 1; i < total_items; i++) {
-                            itemID = document.getElementById("qnt_" + i);
-                            total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
-                        }
-                    
-                        document.getElementById('ItemsTotal').innerHTML = "€" + total.toFixed(2);
-                    }
-                    
-                    document.querySelectorAll('[id^="qnt_"]').forEach(item => {
-                        item.addEventListener('keyup', CalculateItemsValue);
-                    })</script>-->
 
                 <!-- Bill descriptor -->
                 <!-- Detailed BILL -->
-                <div class="postit">
+                <br>
+                <div class="postit" >
                     <table class="table2">
                         <tr>
                             <th colspan="3">Bill Detailed</th>
                         </tr>
                         <tr>
+                            <td><b>Starters</b></td>
                             <td class="total"><strong>
                                     <div id="StartersTotal">€0</div>
                                 </strong></td>
                         
                         <tr>
+                            <td><b>Mains</b></td>
                             <td class="total"><strong>
                                     <div id="MainsTotal">€0</div>
                                 </strong></td>
                         
                         <tr>
+                            <td><b>Desserts</b></td>
                             <td class="total"><strong>
                                     <div id="DessertsTotal">€0</div>
                                 </strong></td>
                         
                         <tr>
+                            <td><b>Drinks</b></td>
                             <td class="total"><strong>
                                     <div id="DrinksTotal">€0</div>
                                 </strong></td></tr>

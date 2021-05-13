@@ -98,12 +98,15 @@ table {
 .postit {
     background-image: url(http://st2.depositphotos.com/4196725/6839/i/450/depositphotos_68398807-white-wrinkled-paper-texture.jpg);
     width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 .table2 {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+   
 }
 
 .price {
