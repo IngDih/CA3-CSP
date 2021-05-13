@@ -12,8 +12,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- My CSS and JS -->
     <link rel="stylesheet" href="css\mystylesheet.css">
-    <script scr="js\script.js"></script>
-    <script scr="js\password.js"></script>
+    <script scr="/js/script.js"></script>
+    <script scr="/js/password.js"></script>
+    <script scr="/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -51,7 +53,8 @@
                             Description
                         </td>
                         <td class="cell">
-                            <input name="qnt_1" type="text" id="qnt_1" value="0" size="1" data-price="7.5" />
+                            <input name="qnt_1" type="text" id="qnt_1" class="starters" value="0" size="1"
+                                data-price="7.5" />
                         </td>
                         <td class="price">€7.5</td>
                     </tr>
@@ -60,15 +63,15 @@
                             Description
                         </td>
                         <td class="cell">
-                            <input name="qnt_2" type="text" id="qnt_2" value="0" size="1" data-price="7.5" />
+                            <input name="qnt_2" type="text" id="qnt_2" class = "starters" value="0" size="1" data-price="7.5" />
                         </td>
                         <td class="price">€7.5</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Edadame Beans (V)</b><br>
-                        description</td>
+                            description</td>
                         <td class="cell">
-                            <input name="qnt_3" type="text" id="qnt_3" value="0" size="1" data-price="5.5" />
+                            <input name="qnt_3" type="text" id="qnt_3" class = "starters, veg" value="0" size="1" data-price="5.5" />
                         </td>
                         <td class="price">€5.5</td>
                     </tr>
@@ -80,33 +83,34 @@
                     </tr>
                     <tr>
                         <td class="pad"><b>Tonkotsu ramen</b><br>
-                        deh</td>
+                            deh</td>
                         <td class="cell">
-                            <input name="qnt_4" type="text" id="qnt_4" value="0" size="1" data-price="12" />
+                            <input name="qnt_4" type="text" id="qnt_4" class="mains" value="0" size="1"
+                                data-price="12" />
                         </td>
                         <td class="price">€12</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Spinach Yasai Ramen (V)</b><br>
-                        def</td>
+                            def</td>
                         <td class="cell">
-                            <input name="qnt_4" type="text" id="qnt_4" value="0" size="1" data-price="11.5" />
+                            <input name="qnt_5" type="text" id="qnt_5" class="mains, veg" value="0" size="1" data-price="11.5" />
                         </td>
                         <td class="price">€11.5</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Salmon Hosomaki x2 </b><br>
-                        shiqsui</td>
+                            shiqsui</td>
                         <td class="cell">
-                            <input name="qnt_5" type="text" id="qnt_5" value="0" size="1" data-price="1.95" />
+                            <input name="qnt_6" type="text" id="qnt_6" class="mains" value="0" size="1" data-price="1.95" />
                         </td>
                         <td class="price">€1.95</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Tofu nigiri (V) x2</b><br>
-                        dfshjoasdfhu</td>
+                            dfshjoasdfhu</td>
                         <td class="cell">
-                            <input name="qnt_6" type="text" id="qnt_6" value="0" size="1" data-price="1.95" />
+                            <input name="qnt_7" type="text" id="qnt_7" class="mains, veg" value="0" size="1" data-price="1.95" />
                         </td>
                         <td class="price">€1.95</td>
                     </tr>
@@ -119,25 +123,25 @@
                     </tr>
                     <tr>
                         <td class="pad"><b>Chocolate Gyoza (V)</b><br>
-                        defhuidfs</td>
+                            defhuidfs</td>
                         <td class="cell">
-                            <input name="qnt_7" type="text" id="qnt_7" value="0" size="1" data-price="8" />
+                            <input name="qnt_8" type="text" id="qnt_8" class="desserts" value="0" size="1" data-price="8" />
                         </td>
                         <td class="price">€8</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Daifuku (V)</b><br>
-                        sdhusdhu</td>
+                            sdhusdhu</td>
                         <td class="cell">
-                            <input name="qnt_8" type="text" id="qnt_8" value="0" size="1" data-price="5" />
+                            <input name="qnt_9" type="text" id="qnt_9" class="desserts" value="0" size="1" data-price="5" />
                         </td>
                         <td class="price">€5</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Purin (V)</b><br>
-                        sdhusd</td>
+                            sdhusd</td>
                         <td class="cell">
-                            <input name="qnt_9" type="text" id="qnt_9" value="0" size="1" data-price="6.5" />
+                            <input name="qnt_10" type="text" id="qnt_10" class="desserts" value="0" size="1" data-price="6.5" />
                         </td>
                         <td class="price">€6.5</td>
                     </tr>
@@ -150,58 +154,60 @@
                     </tr>
                     <tr>
                         <td class="pad"><b>Ramune</b><br>
-                        fdhudfhu</td>
+                            fdhudfhu</td>
                         <td class="cell">
-                            <input name="qnt_10" type="text" id="qnt_10" value="0" size="1" data-price="5.5" />
+                            <input name="qnt_11" type="text" id="qnt_11" class="drinks" value="0" size="1" data-price="5.5" />
                         </td>
                         <td class="price">€5.5</td>
                     </tr>
 
                     <tr>
                         <td class="pad"><b>Kirin beer</b><br>
-                        Japanese beer, Lager</td>
-                        <td class="cell"> 
-                            <input name="qnt_11" type="text" id="qnt_11" value="0" size="1" data-price="6" />
+                            Japanese beer, Lager</td>
+                        <td class="cell">
+                            <input name="qnt_12" type="text" id="qnt_12" class="drinks" value="0" size="1" data-price="6" />
                         </td>
                         <td class="price">€6</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Coke</b><br>
-                        Regular / Zero</td>
+                            Regular / Zero</td>
                         <td class="cell">
-                            <input name="qnt_12" type="text" id="qnt_12" value="0" size="1" data-price="2.5" />
+                            <input name="qnt_13" type="text" id="qnt_13" class="drinks" value="0" size="1" data-price="2.5" />
                         </td>
                         <td class="price">€2.5</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Ito En o~i Ocha</b><br>
-                        dghusdhu</td>
+                            dghusdhu</td>
                         <td class="cell">
-                            <input name="qnt_13" type="text" id="qnt_13" value="0" size="1" data-price="4" />
+                            <input name="qnt_14" type="text" id="qnt_14" class="drinks" value="0" size="1" data-price="4" />
                         </td>
                         <td class="price">€4</td>
                     </tr>
                     <tr>
                         <td class="pad"><b>Sake</b><br>
-                        dhusdhu</td>
+                            dhusdhu</td>
                         <td class="cell">
-                            <input name="qnt_14" type="text" id="qnt_14" value="0" size="1" data-price="5" /></td>
+                            <input name="qnt_15" type="text" id="qnt_15" class="drinks" value="0" size="1" data-price="5" />
+                        </td>
                         <td class="price">€5</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td><strong>Total:</strong></td>
-                        <td class="price"><strong>€0</strong></td>
+                        <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong><div id="ItemsTotal">€0</div></strong></td>
                     </tr>
+                    
                 </table>
+                
+                
+
+                <!-- Bill descriptor -->
+                <table></table>
             </div>
 
-            <script>
-                var numItems = 14;
-                function CalculateItemsValue();
-            </script>
-
-
+            
             <!-- Second row, containing the password and random users -->
             <div class="col-sm-4">
                 <br>
@@ -246,9 +252,9 @@
                             })
                     }
                 </script>
+
                 <div id="output">
                 </div>
-
 
             </div>
         </div>
