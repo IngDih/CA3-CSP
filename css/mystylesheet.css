@@ -75,13 +75,14 @@ a:visited {
 }
 
 table, th, td {
-    border: 1px solid rgb(51, 161, 189);
+    border: 1px solid black;
 }
 
 th {
     padding: 0px;
     height: 30px;
     text-align: center;
+    background-color: rgba(85, 170, 169, 0.486);
 }
 
 td {
@@ -91,7 +92,19 @@ td {
 }
 
 table {
-    width: 400px;
+    width: 90%;
+}
+
+.price {
+    text-align: center;
+}
+
+.cell {
+    text-align: center;
+}
+
+.pad {
+    padding-left: 10px;
 }
 
 ul {
