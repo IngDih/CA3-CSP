@@ -241,47 +241,19 @@
             <div class="col-sm-4">
                 <br>
                 <h2>Staff authenticator</h2><br>
-                <form>
+                <form action="http://www.example.com/login/" method="post">
                     <label for="username">Username:</label><br>
                     <input type="text" name="username" required="required" /><br />
                     <label for="password">Password:</label><br>
-                    <!-- still need to add the special character to the list of regex -->
-                    <input type="text" name="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                        required="required" /><br /><br>
+                    <input type="password" name="password" id="psw" name="psw" pattern="(?=.*[!@#$%^&*])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Your password must contain at least 8 characters including: one number, one special character, one uppercase and one lowercase letter."
+                        required="required" /><br />
+                        <input type="checkbox" onclick="showPass()"> Show Password<br><br>
                     <input type="submit" value="submit" />
                 </form>
                 ---------------------------------------<br><br>
                 <!-- Button for generating random users -->
                 <button class="button button2" id="getRandom">Get Random Users</button><br><br>
-
-
-                <script>
-
-                    document.getElementById('getRandom').addEventListener('click', getRandom);
-                    function getRandom() {
-                        fetch('https://randomuser.me/api/?results=5')
-                            .then((res) => res.json())
-                            .then((data) => {
-                                let author = data.results;
-                                let output = '<h2>Random Users:</h2>'
-                                console.log(data);
-                                author.forEach(function (user) {
-                                    output += `
-                    <div><br>
-                        <ul>
-                            <img src="${user.picture.thumbnail}"><br>
-                            ${user.name.first} ${user.name.last}<br>
-                            ${user.email}<br><br>
-                        </ul>
-                    </div>
-                    `;
-                                });
-                                document.getElementById('output').innerHTML = output;
-                            })
-                    }
-                </script>
-
                 <div id="output">
                 </div>
 
@@ -296,6 +268,7 @@
         href="https://fonts.googleapis.com/css?family=Skranji:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
     <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/random.js"></script>
 </body>
 
 </html>

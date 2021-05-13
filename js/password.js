@@ -1,18 +1,8 @@
-function checkPasswordLength(){
-    var password = el.value;
-    if (password.length < 8){
-        elMsg.className = 'warning';
-        elMsg.textContent = 'Not an ideal password yet.'
+function showPass() {
+    var x = document.getElementById("psw");
+    if (x.type === "password") {
+      x.type = "text";
     } else {
-        el.Msg.textContent = '';
+      x.type = "password";
     }
-}
-
-function tipUsername() {
-    elMsg.className = 'tip';
-    elMsg.innerHTML = 'Your password should contain at least 8 characters, including: *one lowercase letter; *One uppercase letter; *One digit; *One special character.';    
-}
-
-function validate(){
-    var password = document.getElementById('password').value;
-}
+  }
