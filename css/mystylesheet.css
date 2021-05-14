@@ -325,6 +325,20 @@ input {
 
 .font{
     font: 18px/100% georgia;
-    letter-spacing: 0px;
+    letter-spacing: 0px;    
+}
+
+.footer1{
+    background-color: #acd6d5;
+    padding: 80px 0px 40px 0px;
+    border: #fff solid 5px;
+    text-align: right;
+}
+
+.footer2{
+    background-color: #df8ecb65;
+    padding: 80px 0px 40px 0px;
+    border: #fff solid 5px;
+    text-align: right;
     
 }
