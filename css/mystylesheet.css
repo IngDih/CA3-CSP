@@ -83,7 +83,7 @@ td {
 }
 
 table {
-    width: 90%;
+    width: 97%;
 }
 
 .postit {
@@ -122,12 +122,12 @@ ul {
     overflow-y: auto;
 }
 
-.col-sm-3 {
+.col-4 {
     background-color: white;
 }
 
 .col {
-    padding-top: px;
+    padding-top: 0px;
 }
 
 h2{

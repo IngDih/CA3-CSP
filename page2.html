@@ -37,20 +37,28 @@
         <br>
         <div class="whitebackground">
             <h2 style="background-color: #df8ecb65">Javascript demonstration</h2>
-            As you might have figured out, I am big into colours and different patterns and styles. As a demonstration
-            of Javascript
-            <button id="button3">Switch colour background</button>
+            <div class="row">
+
+<!-- Left Column -->
+                <div class="col-6">As you might have figured out, I am big into colours and different patterns and
+                    styles. As a demonstration
+                    of Javascript
+                
+                
+                </div>
+
+<!-- Right Column -->
+
+                <div class="col-6">
+                    <button id="button3">Switch colour background</button>
+
+                </div>
+            </div>
 
 
-            <script type="text/javascript">
-                var color = ["#caf7e3", "#b6b6d9", "#FFD2DD", "#FAFFDB", "#DBE9FF", "#FFDBDB"]
-                var i = 0;
-                document.querySelector("button").addEventListener("click",
-                    function () {
-                        i = i < color.length ? ++i : 0;
-                        document.querySelector("body").style.background = color[i]
-                    })
-            </script>
+
+
+            
 
 
 
@@ -65,6 +73,8 @@
         <link
             href=" https://fonts.googleapis.com/css?family=Megrim:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
             rel="stylesheet">
+        <!-- Scripts used in this page were imported here -->
+        <script type="text/javascript" src="js/switchbgcolour.js"></script>
 </body>
 
 </html>
