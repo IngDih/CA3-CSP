@@ -32,13 +32,16 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="page2.html">Page 2</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://github.com/IngDih/CA3-CSP">GitHub</a>
+                </li>
             </ul>
         </div>
         <br>
         <div class="whitebackground">
 
-            <!-- Javscrip demo -->
-            <h2 style="background-color: #df8ecb65">Javascript demonstration</h2>
+            <!-- Javscript demo -->
+            <h2 style="background-color: #df8ecb65">✦ Javascript demonstration</h2>
             <div class="row">
 
                 <!-- Left Column -->
@@ -46,61 +49,109 @@
                     patterns and styles. In this demonstration of a Javascript function I used a function to change the
                     background colour so it returns a pastel colour background. The colours were stored previously in an
                     array of 5 items (0-4) and are accessed in a "for loop".
-                    <br><br><br>
+                    <br><br><br><br><br>
 
-                    Another example
-
+                    Another example now restaurant related, would be the tip calculator, that could be available ia a
+                    section or page of the Di-Sushi website as a way to help customers to tip, if desired.
                 </div>
 
                 <!-- Right Column -->
                 <div class="col-6"><br><br>
+
+                    <!-- Button that switches colours of background -->
                     <button class="button3">Switch colour background</button>
+                    <br>
+
+                    <!-- Tip calculator -->
+                    <div id="container"><br>
+                        <h2 style="background-color: #ffffff65"><b>Tip Calculator</b></h3>
+<br>
+                            <div id="calculator">
+                                <form>
+                                    <p class="font">How much was your bill?
+                                    <p>
+                                        € <input id="billamt" type="text" placeholder="Bill Amount">
+
+                                    <p class="font">How was your service?
+                                    <p>
+                                        <select id="serviceQual">
+                                            <option disabled selected value="0">-- Choose an Option --</option>
+                                            <option value="0.3">30&#37; &#45; Outstanding</option>
+                                            <option value="0.2">20&#37; &#45; Good</option>
+                                            <option value="0.15">15&#37; &#45; It was OK</option>
+                                            <option value="0.1">10&#37; &#45; Bad</option>
+                                            <option value="0.05">5&#37; &#45; Terrible</option>
+                                        </select>
+
+                                </form>
+                                <p class="font">How many people are sharing the bill?</p>
+                                <input id="peopleamt" type="text" placeholder="#"> Num of people
+                                <br><br>
+                                <button type="button" id="calculate">Calculate!</button>
+
+                            </div>
+                            <!--calculator end-->
+                            <div id="totalTip">
+                                <sup>€</sup><span id="tip">0.00</span>
+                                <small id="each">each</small>
+                            </div>
+                            <!--totalTip end-->
+                    </div>
+                    <!--container end-->
+
 
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
             <br>
+
             <!-- Library and Frameworks demo -->
-            <h2 style="background-color: #df8ecb65">Library/ Frameworks demonstration</h2>
+            <h2 style="background-color: #df8ecb65">✦ Library/ Frameworks demonstration</h2>
             <div class="row">
-                <!-- Left Column -->
-                <div class="col-12 justify">As a Japan related item and using jQuery I though I could use the fadeIn()
-                    and some pixel art to display the Japanese flagnja sdhjasdji hasdnjsda dnjadnj adhid anhdhid djai djijiajdi 
 
-                </div>
+                <div class="col justify">When I think of Japan, I think of old pixelated videogames, icons, gifs
 
-
-                <!-- Right Column -->
-                <!--  <div class="col-6">-->
                     <div id="drawing-board">
-                        <div id="draw-bg"><canvas id="draw" width="280" height="280">Browser does not support canvas</canvas></div>
-                        <div id="drawing"><div class="pixels"></div></div>
+                        <div id="draw-bg"><canvas id="draw" width="320" height="320">Browser does not support
+                                canvas</canvas></div>
+                        <div id="drawing">
+                            <div class="pixels"></div>
+                        </div>
                         <textarea id="output"></textarea>
                         <button id="clear-all">Clear all</button>
                         <button id="generate-code">Generate code</button>
-                      </div>
+                    </div><br><br>
 
-                <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
             </div>
+
+
         </div>
+        <!-- the header fonts were imported here -->
+        <link
+            href=" https://fonts.googleapis.com/css?family=Megrim:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Special Elite:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
+            rel="stylesheet">
+        <!-- Scripts used in this page were imported here -->
+        <script type="text/javascript" src="js/switchbgcolour.js"></script>
+        <script type="text/javascript" src="js/pixelart.js"></script>
+        <script type="text/javascript" src="js/tipcalculator.js"></script>
 
 
-    </div>
-    <!-- the header fonts were imported here -->
-    <link
-        href=" https://fonts.googleapis.com/css?family=Megrim:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
-    <!-- Scripts used in this page were imported here -->
-    <script type="text/javascript" src="js/switchbgcolour.js"></script>
-    <script type="text/javascript" src="js/pixelart.js"></script>
 </body>
 
 </html>

@@ -36,11 +36,25 @@
     letter-spacing: 8px;
 }
 
+/* Button designs */
+
 .button2 {
     background-color: #ffd98d;
     transition-duration: 0.4s;
     width: 150px;
     height: 40px;
+    border-radius: 5px;
+    border: rgb(0, 0, 0) solid 1px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: #ffd98d;
+    transition-duration: 0.4s;
+    width: 150px;
+    height: 60px;
     border-radius: 5px;
     border: rgb(0, 0, 0) solid 1px;
     text-align: center;
@@ -62,6 +76,8 @@ a:visited {
     text-decoration: none;
     color: black;
 }
+
+/* Misc CSS editions to text, tables and etc. */
 
 .center {
     margin-left: auto;
@@ -123,10 +139,7 @@ ul {
     height: 100%;
     margin: 0em;
     overflow-y: auto;
-    
 }
-
-
 
 .col-4 {
     background-color: white;
@@ -146,18 +159,6 @@ body {
     margin: 0;
     padding: 0;
     background: #ffffff;
-}
-
-.button3 {
-    background-color: #ffd98d;
-    transition-duration: 0.4s;
-    width: 150px;
-    height: 60px;
-    border-radius: 5px;
-    border: rgb(0, 0, 0) solid 1px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 .whitebackground {
@@ -180,7 +181,7 @@ body {
 /* pixel art */
 
 #drawing-board {
-    width: 950px;
+    width: 980px;
     margin: 25px auto;
     border: 1px solid #ddd;
     background: #fff;
@@ -189,21 +190,21 @@ body {
 }
 
 #draw-bg {
-    width: 300px;
-    height: 3o0px;
+    width: 320px;
+    height: 320px;
     float: left;
 }
 
 #draw {
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
 }
 
 #drawing {
     background: #fff;
-    width: 300px;
-    height: 300px;
+    width: 308px;
+    height: 318px;
     border: 1px solid #ddd;
     margin: 0 10px;
     padding: 0;
@@ -215,7 +216,7 @@ body {
 #output {
     background: #fff;
     width: 308px;
-    height: 300px;
+    height: 318px;
     border: 1px solid #ddd;
     margin: 0;
     padding: 0;
@@ -226,10 +227,104 @@ body {
 
 #clear-all {
     margin: 10px 0 0 0;
-    float: right;
+    float: left;
 }
 
 #generate-code {
     margin: 10px 0 0 0;
     float: right;
+}
+
+/* flag */
+
+.flag {
+    box-shadow: 45px 25px 0 0 rgba(0, 0, 0, 1), 50px 25px 0 0 rgba(0, 0, 0, 1), 55px 25px 0 0 rgba(0, 0, 0, 1), 60px 25px 0 0 rgba(0, 0, 0, 1), 65px 25px 0 0 rgba(0, 0, 0, 1), 70px 25px 0 0 rgba(0, 0, 0, 1), 75px 25px 0 0 rgba(0, 0, 0, 1), 80px 25px 0 0 rgba(0, 0, 0, 1), 85px 25px 0 0 rgba(0, 0, 0, 1), 90px 25px 0 0 rgba(0, 0, 0, 1), 45px 30px 0 0 rgba(0, 0, 0, 1), 50px 30px 0 0 rgba(255, 255, 255, 1), 55px 30px 0 0 rgba(255, 255, 255, 1), 60px 30px 0 0 rgba(255, 255, 255, 1), 65px 30px 0 0 rgba(255, 255, 255, 1), 70px 30px 0 0 rgba(255, 255, 255, 1), 75px 30px 0 0 rgba(255, 255, 255, 1), 80px 30px 0 0 rgba(255, 255, 255, 1), 85px 30px 0 0 rgba(255, 255, 255, 1), 90px 30px 0 0 rgba(0, 0, 0, 1), 45px 35px 0 0 rgba(0, 0, 0, 1), 50px 35px 0 0 rgba(255, 255, 255, 1), 55px 35px 0 0 rgba(255, 255, 255, 1), 60px 35px 0 0 rgba(255, 255, 255, 1), 65px 35px 0 0 rgba(255, 0, 0, 1), 70px 35px 0 0 rgba(255, 0, 0, 1), 75px 35px 0 0 rgba(255, 255, 255, 1), 80px 35px 0 0 rgba(255, 255, 255, 1), 85px 35px 0 0 rgba(255, 255, 255, 1), 90px 35px 0 0 rgba(0, 0, 0, 1), 45px 40px 0 0 rgba(0, 0, 0, 1), 50px 40px 0 0 rgba(255, 255, 255, 1), 55px 40px 0 0 rgba(255, 255, 255, 1), 60px 40px 0 0 rgba(255, 255, 255, 1), 65px 40px 0 0 rgba(255, 0, 0, 1), 70px 40px 0 0 rgba(255, 0, 0, 1), 75px 40px 0 0 rgba(255, 255, 255, 1), 80px 40px 0 0 rgba(255, 255, 255, 1), 85px 40px 0 0 rgba(255, 255, 255, 1), 90px 40px 0 0 rgba(0, 0, 0, 1), 45px 45px 0 0 rgba(0, 0, 0, 1), 50px 45px 0 0 rgba(255, 255, 255, 1), 55px 45px 0 0 rgba(255, 255, 255, 1), 60px 45px 0 0 rgba(255, 255, 255, 1), 65px 45px 0 0 rgba(255, 255, 255, 1), 70px 45px 0 0 rgba(255, 255, 255, 1), 75px 45px 0 0 rgba(255, 255, 255, 1), 80px 45px 0 0 rgba(255, 255, 255, 1), 85px 45px 0 0 rgba(255, 255, 255, 1), 90px 45px 0 0 rgba(0, 0, 0, 1), 45px 50px 0 0 rgba(0, 0, 0, 1), 50px 50px 0 0 rgba(0, 0, 0, 1), 55px 50px 0 0 rgba(0, 0, 0, 1), 60px 50px 0 0 rgba(0, 0, 0, 1), 65px 50px 0 0 rgba(0, 0, 0, 1), 70px 50px 0 0 rgba(0, 0, 0, 1), 75px 50px 0 0 rgba(0, 0, 0, 1), 80px 50px 0 0 rgba(0, 0, 0, 1), 85px 50px 0 0 rgba(0, 0, 0, 1), 90px 50px 0 0 rgba(0, 0, 0, 1), 45px 55px 0 0 rgba(0, 0, 0, 1), 45px 60px 0 0 rgba(0, 0, 0, 1), 45px 65px 0 0 rgba(0, 0, 0, 1), 45px 70px 0 0 rgba(0, 0, 0, 1), 45px 75px 0 0 rgba(0, 0, 0, 1), 45px 80px 0 0 rgba(0, 0, 0, 1);
+    height: 5px;
+    width: 5px;
+}
+
+/* tip calculator */
+
+#container {
+    height: 520px;
+    width: 350px;
+    margin: 100px auto;
+    background: #acd6d5;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+form input[type="text"] {
+    width: 90px;
+}
+
+input {
+    padding-left: 20px;
+}
+
+#billamt {
+    font-size: 15px;
+    /*color: #2980b9;*/
+    color: black;
+    background-color: #f7f7f7;
+    width: 30%;
+    padding: 5px 5px 8px 8px;
+}
+
+#billamt:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+#peopleamt {
+    width: 15%;
+    padding: 5px 5px 8px 8px;
+    margin-left: 20px;
+    color: black;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.euroSign {
+    display: inline;
+}
+
+#serviceQual {
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+#totalTip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#totalTip:before {
+    content: "Tip amount";
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalTip sup {
+    font-size: 20px;
+    top: -18px;
+}
+
+#totalTip small {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.font{
+    font: 18px/100% georgia;
+    letter-spacing: 0px;
+    
 }
