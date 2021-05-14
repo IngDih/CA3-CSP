@@ -1,3 +1,4 @@
+/* Function to hide password while typing */
 function showPass() {
     var x = document.getElementById("psw");
     if (x.type === "password") {

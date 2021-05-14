@@ -1,3 +1,4 @@
+/* method to generate random users */
 document.getElementById('getRandom').addEventListener('click', getRandom);
 function getRandom() {
     fetch('https://randomuser.me/api/?results=5')

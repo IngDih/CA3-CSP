@@ -1,3 +1,4 @@
+/* header page 1 */
 #header {
     background-image: url(/img/header1.png);
     background-color: #ccc;
@@ -5,6 +6,7 @@
     border: #fff solid 1px;
 }
 
+/* header page 2 */
 #header2 {
     background-image: url(/img/gifheader.gif);
     background-color: #ccc;
@@ -12,6 +14,7 @@
     border: #fff solid 1px;
 }
 
+/* white box containing names for legibility */
 .whiteheader {
     height: 120px;
     background-color: #fff;
@@ -97,16 +100,15 @@ table {
 
 .postit {
     background-image: url(http://st2.depositphotos.com/4196725/6839/i/450/depositphotos_68398807-white-wrinkled-paper-texture.jpg);
-    width:fit-content;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    }
+}
 
 .table2 {
-    width: 250px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
-   
 }
 
 .price {
@@ -139,7 +141,3 @@ ul {
 .col {
     padding-top: px;
 }
-
-
-/* bar chart */
-

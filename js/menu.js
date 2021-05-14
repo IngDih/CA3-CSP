@@ -1,5 +1,4 @@
 /* Total price */
-
 function CalculateItemsValue() {
     let total_items = 15;
     let total = 0;
