@@ -26,8 +26,14 @@
                 <div class="headertext2">
                     CA3 Client-Side Programming</div>
             </div>
-            <button class="button button "><a href="index.html">Page 1</a></button>
-            <button class="button button"><a href="page2.html">Page 2</a></button>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="page2.html">Page 2</a>
+                </li>
+            </ul>
         </div>
 
         <br>
@@ -294,14 +300,14 @@
                         pattern="(?=.*[!@#$%^&*])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Your password must contain at least 8 characters including: one number, one special character, one uppercase and one lowercase letter."
                         required="required" /><br />
-                        <!-- included a hide/show password tick box -->
+                    <!-- included a hide/show password tick box -->
                     <input type="checkbox" onclick="showPass()"> Show Password<br><br>
                     <input type="submit" value="submit" />
                 </form>
                 ---------------------------------------<br><br>
 
                 <!-- Button for generating random users -->
-                <button class="button button2" id="getRandom">Get Random Users</button><br><br>
+                <button class="button2" id="getRandom">Get Random Users</button><br><br>
                 <div id="output">
                 </div>
             </div>

@@ -25,13 +25,42 @@
                 <div class="headertext2">
                     CA3 Client-Side Programming</div>
             </div>
-            <button class="button button "><a href="index.html">Page 1</a></button>
-            <button class="button button"><a href="page2.html">Page 2</a></button>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="page2.html">Page 2</a>
+                </li>
+            </ul>
         </div>
-        <br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur, fuga at, quasi omnis nam quos rem
-        nihil fugit velit aliquam veritatis, error ad consequuntur alias iste harum laborum amet!
+        <br>
+        <div class="whitebackground">
+            <h2 style="background-color: #df8ecb65">Javascript demonstration</h2>
+            As you might have figured out, I am big into colours and different patterns and styles. As a demonstration
+            of Javascript
+            <button id="button3">Switch colour background</button>
 
+
+            <script type="text/javascript">
+                var color = ["#caf7e3", "#b6b6d9", "#FFD2DD", "#FAFFDB", "#DBE9FF", "#FFDBDB"]
+                var i = 0;
+                document.querySelector("button").addEventListener("click",
+                    function () {
+                        i = i < color.length ? ++i : 0;
+                        document.querySelector("body").style.background = color[i]
+                    })
+            </script>
+
+
+
+
+            <br>
+            <h2 style="background-color: #df8ecb65">Library/ Frameworks demonstration</h2>
+
+
+
+        </div>
         <!-- the header fonts were imported here -->
         <link
             href=" https://fonts.googleapis.com/css?family=Megrim:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
