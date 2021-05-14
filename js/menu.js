@@ -3,14 +3,24 @@
 function CalculateItemsValue() {
     let total_items = 15;
     let total = 0;
+    let veg_total = 0;
+    let notveg_total = 0;
 
     for (let i = 1; i <= total_items; i++) {
         itemID = document.getElementById("qnt_" + i);
         console.log("qnt_" + i + " " + itemID.value);
         total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+        if (itemID.getAttribute("data-type") == "veg") {
+            veg_total = veg_total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+        }
+        else if (itemID.getAttribute("data-type") == "notVeg") {
+            notveg_total = notveg_total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+        }
     }
 
     document.getElementById('ItemsTotal').innerHTML = "€" + total.toFixed(2);
+    document.getElementById('veg_total').innerHTML = "€" + veg_total.toFixed(2);
+    document.getElementById('notveg_total').innerHTML = "€" + notveg_total.toFixed(2);
 }
 
 document.querySelectorAll('[id^="qnt_"]').forEach(item => {
@@ -90,6 +100,3 @@ function CalculateDrinksValue() {
 document.querySelectorAll('[id^="qnt_11"], [id^="qnt_12"], [id^="qnt_13"], [id^="qnt_14"], [id^="qnt_15"]').forEach(item => {
     item.addEventListener('keyup', CalculateDrinksValue);
 })
-
-
-

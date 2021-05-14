@@ -10,14 +10,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
     <!-- My CSS and JS -->
     <link rel="stylesheet" href="css\mystylesheet.css">
-    <script src="js/password.js"></script>
-    
+
 </head>
 
 <body>
-    
+
     <div class="container">
 
         <div id="header">
@@ -52,7 +53,7 @@
                         </td>
                         <td class="cell">
                             <input name="qnt_1" type="text" id="qnt_1" class="starters" value="0" size="1"
-                                data-price="7.5" />
+                                data-price="7.5" data-type="notVeg" />
                         </td>
                         <td class="price">€7.5</td>
                     </tr>
@@ -61,7 +62,8 @@
                             Marinated in soy, ginger, garlic and mirin then fried.
                         </td>
                         <td class="cell">
-                            <input name="qnt_2" type="text" id="qnt_2" class = "starters" value="0" size="1" data-price="7.5" />
+                            <input name="qnt_2" type="text" id="qnt_2" class="starters" value="0" size="1"
+                                data-price="7.5" data-type="notVeg" />
                         </td>
                         <td class="price">€7.5</td>
                     </tr>
@@ -69,7 +71,8 @@
                         <td class="pad"><b>Edadame Beans (V)</b><br>
                             Steamed young soya beans sprinkled w/ Himalayan salt.</td>
                         <td class="cell">
-                            <input name="qnt_3" type="text" id="qnt_3" class = "starters, veg" value="0" size="1" data-price="5.5" />
+                            <input name="qnt_3" type="text" id="qnt_3" class="starters" value="0" size="1"
+                                data-price="5.5" data-type="veg" />
                         </td>
                         <td class="price">€5.5</td>
                     </tr>
@@ -83,8 +86,8 @@
                         <td class="pad"><b>Tonkotsu ramen</b><br>
                             Tonkotsu soup, pork, seasoned egg, dried nori seaweed.</td>
                         <td class="cell">
-                            <input name="qnt_4" type="text" id="qnt_4" class="mains" value="0" size="1"
-                                data-price="12" />
+                            <input name="qnt_4" type="text" id="qnt_4" class="mains" value="0" size="1" data-price="12"
+                                data-type="notVeg" />
                         </td>
                         <td class="price">€12</td>
                     </tr>
@@ -92,7 +95,8 @@
                         <td class="pad"><b>Spinach Yasai Ramen (V)</b><br>
                             Spinach noodles, veggie dumplings, bean sprouts, pak choi.</td>
                         <td class="cell">
-                            <input name="qnt_5" type="text" id="qnt_5" class="mains, veg" value="0" size="1" data-price="11.5" />
+                            <input name="qnt_5" type="text" id="qnt_5" class="mains, veg" value="0" size="1"
+                                data-price="11.5" data-type="veg" />
                         </td>
                         <td class="price">€11.5</td>
                     </tr>
@@ -100,7 +104,8 @@
                         <td class="pad"><b>Salmon Hosomaki</b><br>
                             Salmon, nori, rice.</td>
                         <td class="cell">
-                            <input name="qnt_6" type="text" id="qnt_6" class="mains" value="0" size="1" data-price="1.95" />
+                            <input name="qnt_6" type="text" id="qnt_6" class="mains" value="0" size="1"
+                                data-price="1.95" data-type="notVeg" />
                         </td>
                         <td class="price">€1.95</td>
                     </tr>
@@ -108,7 +113,8 @@
                         <td class="pad"><b>Tofu nigiri (V) x2</b><br>
                             Tofu, nori, rice, oyster mushrooms.</td>
                         <td class="cell">
-                            <input name="qnt_7" type="text" id="qnt_7" class="mains, veg" value="0" size="1" data-price="1.95" />
+                            <input name="qnt_7" type="text" id="qnt_7" class="mains, veg" value="0" size="1"
+                                data-price="1.95" data-type="veg" />
                         </td>
                         <td class="price">€1.95</td>
                     </tr>
@@ -123,7 +129,8 @@
                         <td class="pad"><b>Chocolate Gyoza (V)</b><br>
                             Chocolate dumpling.</td>
                         <td class="cell">
-                            <input name="qnt_8" type="text" id="qnt_8" class="desserts" value="0" size="1" data-price="8" />
+                            <input name="qnt_8" type="text" id="qnt_8" class="desserts" value="0" size="1"
+                                data-price="8" />
                         </td>
                         <td class="price">€8</td>
                     </tr>
@@ -131,7 +138,8 @@
                         <td class="pad"><b>Ichigo daifuku (V)</b><br>
                             Strawberry, Mochi, red bean paste.</td>
                         <td class="cell">
-                            <input name="qnt_9" type="text" id="qnt_9" class="desserts" value="0" size="1" data-price="5" />
+                            <input name="qnt_9" type="text" id="qnt_9" class="desserts" value="0" size="1"
+                                data-price="5" />
                         </td>
                         <td class="price">€5</td>
                     </tr>
@@ -139,7 +147,8 @@
                         <td class="pad"><b>Purin (V)</b><br>
                             Japanese custard pudding.</td>
                         <td class="cell">
-                            <input name="qnt_10" type="text" id="qnt_10" class="desserts" value="0" size="1" data-price="6.5" />
+                            <input name="qnt_10" type="text" id="qnt_10" class="desserts" value="0" size="1"
+                                data-price="6.5" />
                         </td>
                         <td class="price">€6.5</td>
                     </tr>
@@ -154,7 +163,8 @@
                         <td class="pad"><b>Ramune</b><br>
                             Japanese soft drink, sorted flavours.</td>
                         <td class="cell">
-                            <input name="qnt_11" type="text" id="qnt_11" class="drinks" value="0" size="1" data-price="5.5" />
+                            <input name="qnt_11" type="text" id="qnt_11" class="drinks" value="0" size="1"
+                                data-price="5.5" />
                         </td>
                         <td class="price">€5.5</td>
                     </tr>
@@ -163,7 +173,8 @@
                         <td class="pad"><b>Kirin beer</b><br>
                             Japanese beer, Lager</td>
                         <td class="cell">
-                            <input name="qnt_12" type="text" id="qnt_12" class="drinks" value="0" size="1" data-price="6" />
+                            <input name="qnt_12" type="text" id="qnt_12" class="drinks" value="0" size="1"
+                                data-price="6" />
                         </td>
                         <td class="price">€6</td>
                     </tr>
@@ -171,7 +182,8 @@
                         <td class="pad"><b>Coke</b><br>
                             Regular / Zero</td>
                         <td class="cell">
-                            <input name="qnt_13" type="text" id="qnt_13" class="drinks" value="0" size="1" data-price="2.5" />
+                            <input name="qnt_13" type="text" id="qnt_13" class="drinks" value="0" size="1"
+                                data-price="2.5" />
                         </td>
                         <td class="price">€2.5</td>
                     </tr>
@@ -179,7 +191,8 @@
                         <td class="pad"><b>Ito En o~i Ocha</b><br>
                             Green tea.</td>
                         <td class="cell">
-                            <input name="qnt_14" type="text" id="qnt_14" class="drinks" value="0" size="1" data-price="4" />
+                            <input name="qnt_14" type="text" id="qnt_14" class="drinks" value="0" size="1"
+                                data-price="4" />
                         </td>
                         <td class="price">€4</td>
                     </tr>
@@ -187,23 +200,25 @@
                         <td class="pad"><b>Sake</b><br>
                             Japanese rice wine.</td>
                         <td class="cell">
-                            <input name="qnt_15" type="text" id="qnt_15" class="drinks" value="0" size="1" data-price="5" />
+                            <input name="qnt_15" type="text" id="qnt_15" class="drinks" value="0" size="1"
+                                data-price="5" />
                         </td>
                         <td class="price">€5</td>
                     </tr>
                     <tr>
                         <td class="total">&nbsp;</td>
                         <td class="total right"><strong>Total:</strong></td>
-                        <td class="total"><strong><div id="ItemsTotal">€0</div></strong></td>
+                        <td class="total"><strong>
+                                <div id="ItemsTotal">€0</div>
+                            </strong></td>
                     </tr>
-                    
-                </table>
-               
 
-                <!-- Bill descriptor -->
+                </table>
+
+
                 <!-- Detailed BILL -->
                 <br>
-                <div class="postit" >
+                <div class="postit">
                     <table class="table2">
                         <tr>
                             <th colspan="3">Bill Detailed</th>
@@ -213,30 +228,55 @@
                             <td class="total"><strong>
                                     <div id="StartersTotal">€0</div>
                                 </strong></td>
-                        
+
                         <tr>
                             <td><b>Mains</b></td>
                             <td class="total"><strong>
                                     <div id="MainsTotal">€0</div>
                                 </strong></td>
-                        
+
                         <tr>
                             <td><b>Desserts</b></td>
                             <td class="total"><strong>
                                     <div id="DessertsTotal">€0</div>
                                 </strong></td>
-                        
+
                         <tr>
                             <td><b>Drinks</b></td>
                             <td class="total"><strong>
                                     <div id="DrinksTotal">€0</div>
-                                </strong></td></tr>
-                        
+                                </strong></td>
+                        </tr>
                     </table>
+
+                    <br>
+                    <div class="postit">
+                        <table class="table2">
+                            <tr>
+                                <th colspan="3">Vegetarian vs Non-Veg costs</th>
+                            </tr>
+                            <tr>
+                                <td><b>Vegetarian</b></td>
+                                <td class="total"><strong>
+                                        <div id="veg_total">€0</div>
+                                    </strong></td>
+
+                            <tr>
+                                <td><b>Non-Vegetarian</b></td>
+                                <td class="total"><strong>
+                                        <div id="notveg_total">€0</div>
+                                    </strong></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            
+
+            <!-- ------------------------------------------------------------------------------- -->
+
+
             <!-- Second row, containing the password and random users -->
             <div class="col-sm-4">
                 <br>
@@ -245,10 +285,11 @@
                     <label for="username">Username:</label><br>
                     <input type="text" name="username" required="required" /><br />
                     <label for="password">Password:</label><br>
-                    <input type="password" name="password" id="psw" name="psw" pattern="(?=.*[!@#$%^&*])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    <input type="password" name="password" id="psw" name="psw"
+                        pattern="(?=.*[!@#$%^&*])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Your password must contain at least 8 characters including: one number, one special character, one uppercase and one lowercase letter."
                         required="required" /><br />
-                        <input type="checkbox" onclick="showPass()"> Show Password<br><br>
+                    <input type="checkbox" onclick="showPass()"> Show Password<br><br>
                     <input type="submit" value="submit" />
                 </form>
                 ---------------------------------------<br><br>
@@ -256,7 +297,6 @@
                 <button class="button button2" id="getRandom">Get Random Users</button><br><br>
                 <div id="output">
                 </div>
-
             </div>
         </div>
     </div>
@@ -269,6 +309,9 @@
         rel="stylesheet">
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/random.js"></script>
+    <script type="text/javascript" src="js/password.js"></script>
+    <script type="text/javascript" src="js/piechart.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 
 </html>
