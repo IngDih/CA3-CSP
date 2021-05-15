@@ -10,13 +10,13 @@ function CalculateItemsValue() {
         console.log("qnt_" + i + " " + itemID.value);
         total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
         if (itemID.getAttribute("data-type") == "veg") {
-            veg_total = veg_total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+            veg_total = veg_total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price")); /* "If" to calculate vegetarian food price on another table */
         }
         else if (itemID.getAttribute("data-type") == "notVeg") {
-            notveg_total = notveg_total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+            notveg_total = notveg_total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price")); /* Else if to calculate non veggie food price */
         }
     }
-
+    /* methods to return the values of the ID attributes */
     document.getElementById('ItemsTotal').innerHTML = "€" + total.toFixed(2);
     document.getElementById('veg_total').innerHTML = "€" + veg_total.toFixed(2);
     document.getElementById('notveg_total').innerHTML = "€" + notveg_total.toFixed(2);

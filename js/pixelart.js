@@ -1,3 +1,4 @@
+/* Code for the Pixel Art Generator */
 $(document).ready(function () {
     var canvas = document.getElementById('draw'),
       context = canvas.getContext('2d'),

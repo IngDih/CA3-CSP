@@ -18,6 +18,7 @@ function getRandom() {
                     </div>
                     `;
             });
+            /* calls the method to show the output */
             document.getElementById('output').innerHTML = output;
         })
 }
